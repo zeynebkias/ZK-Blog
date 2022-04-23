@@ -4,14 +4,19 @@ export default function Header() {
   return (
     <div className="header">
       <div className="headerTitles">
-        <span className="headerTitleSm">React & Node</span>
-        <span className="headerTitleLg">BLOG</span>
+      {/* <span className="headerTitleSm">ART, NATURE & CRAFT MADE IN ALGERIA</span> */}
+      <span className="headerTitleSm">ART ♥ NATURE ♥ PHOTOGRAPHY ♥ CRAFT</span>
+
+      <span className="headerTitleSmm">MADE IN ALGERIA</span>
+
+
+        <span className="headerTitleLg">7IRFA </span>
+
+        
+
+
       </div>
-      <img
-        className="headerImg"
-        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        alt=""
-      />
+     
     </div>
   );
 }

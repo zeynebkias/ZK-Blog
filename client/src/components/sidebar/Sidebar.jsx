@@ -3,10 +3,16 @@ import "./sidebar.css";
 import { useLocation } from "react-router";
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
+import { Context } from "../../context/Context";
+
+
 
 
 export default function Sidebar() {
   const [cats, setCats] = useState([]);
+  const PF = "http://localhost:5000/images/";
+  const { user } = useContext(Context);
+
 
   useEffect(() => {
     const getCats = async () => {
@@ -21,10 +27,14 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
-        <img
+
+        {user.profilePic && <img className="postImg" src={PF + user.profilePic} alt="" />}
+
+
+        {/* <img
           src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
           alt=""
-        />
+        /> */}
         <p>
           Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
           amet ex esse.Sunt eu ut nostrud id quis proident.

@@ -1,25 +1,101 @@
 .header {
-    margin-top: 60px;
+  height: 88vh;
+  margin-top : 2%;
+  /* background-image: url("https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background-image: url("../../img/6.jpg");
+    background-color: rgba(255, 228, 196, 0.466);
+    background-blend-mode:  soft-light;
+    background-blend-mode: screen;
+    /* -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 50% 100%, 0 100%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 50% 100%, 0 100%, 0% 25%); */
+-webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 0% 43%, 17% 12%);
+clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 0% 43%, 17% 12%);
+
+-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 0 0);
+
+
+
+  /* background: linear-gradient(to top, rgba(77, 83, 67, 0) , rgba(161, 174, 175, 0.493),rgb(255, 255, 255)); */
+
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    
   }
+
+
+  /* span:nth-last-of-type(1){
+    transform: rotate(-45deg)
+  } */
+
+  span:nth-last-of-type(2){
+    transform: rotate(83deg)
+  }
+  /* span:nth-last-of-type(3){
+    transform: rotate(-9deg)
+  } */
+
+
+
+
+
+
+  
   
   .headerTitles {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Lora", serif;
-    color: #444;
+    font-family: Montserrat;
+    color: rgba(48, 48, 48, 0.856);
+
   }
   
   .headerTitleSm {
     position: absolute;
-    top: 18%;
-    font-size: 20px;
+    letter-spacing: 5px;
+    top: 20%;
+    /* right: 52%; */
+    font-size: 15px;
+    font-weight: bold;
+    color : rgba(56, 50, 50, 0.616);
+  }
+
+  .headerTitleSmm {
+    position: absolute;
+    letter-spacing: 5px;
+    top: 57.3%;
+    left: 57%;
+    font-size: 9.5px;
+    font-weight: bold;
+    color : rgb(56, 50, 50);
   }
   
   .headerTitleLg {
     position: absolute;
-    top: 20%;
-    font-size: 100px;
+    letter-spacing: 8px;
+
+    top: 40%;
+    font-size: 200px;
+    color : rgba(56, 50, 50, 0.788);
+    /* background: linear-gradient(to top, rgba(77, 83, 67, 0) , rgba(161, 174, 175, 0.493), rgba(98, 82, 68, 0.575)); */
+    /* padding: 20px 460px 140px 460px; */
+    font-family: Big Shoulders Stencil Text, cursive;
+    
+
+  }
+
+  .headerTitlelast{
+    position: absolute;
+
+    top: 47%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: normal;
+    left : 53%;
+
   }
   
   .headerImg {
