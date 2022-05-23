@@ -22,7 +22,7 @@ export default function Home() {
 
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/posts' + search)
+    axios.get('http://localhost:5000/api/posts' + search) 
         .then(res => { setPosts(res.data) })
 
 }
